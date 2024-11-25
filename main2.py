@@ -257,11 +257,11 @@ class Karteikarten:
 
         if self.is_front:
             self.canvas.create_image(400, 263, image=self.card_front_image)
-            self.canvas.create_text(400, 150, text="Vorne", font=("Ariel", 40, "italic"))
+            self.canvas.create_text(400, 150, text="Vorne", font=("Ariel", 10, "italic"))
             self.canvas.create_text(400, 263, text=self.current_card["Vorne"], font=("Ariel", 18, "bold"))
         else:
             self.canvas.create_image(400, 263, image=self.card_back_image)
-            self.canvas.create_text(400, 150, text="Hinten", font=("Ariel", 40, "italic"))
+            self.canvas.create_text(400, 150, text="Hinten", font=("Ariel", 10, "italic"))
             self.canvas.create_text(400, 263, text=self.current_card["Hinten"], font=("Ariel", 18, "bold"))
 
 
